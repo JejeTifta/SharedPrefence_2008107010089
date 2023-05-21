@@ -9,7 +9,7 @@
     android:padding="16dp"
     android:background="#14d8ff"
     tools:context=".MainActivity">
-
+//inputan isi text
     <EditText
         android:id="@+id/edit_file"
         android:backgroundTint="#d3d3d3"
@@ -24,12 +24,15 @@
         android:gravity="top|start"
         android:inputType="textMultiLine|textNoSuggestions"
         android:padding="@dimen/tiny_margin" />
+    //header
     <LinearLayout
         android:id="@+id/header_linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal|start"
         android:orientation="horizontal">
+        
+        //membuat file baru
         <Button
             android:id="@+id/button_new"
             style="@style/Widget.AppCompat.Button.Colored"
@@ -37,6 +40,8 @@
             android:layout_height="match_parent"
             android:layout_marginBottom="@dimen/tiny_margin"
             android:text="@string/file_new" />
+        
+        //membuka file yg sudah dibuat
         <Button
             android:id="@+id/button_open"
             style="@style/Widget.AppCompat.Button.Colored"
@@ -45,6 +50,8 @@
             android:layout_marginBottom="@dimen/tiny_margin"
             android:layout_marginStart="@dimen/tiny_margin"
             android:text="@string/file_open" />
+        
+        //menyimpan file yg sudah di input
         <Button
             android:id="@+id/button_save"
             style="@style/Widget.AppCompat.Button.Colored"
@@ -53,6 +60,8 @@
             android:layout_marginBottom="@dimen/tiny_margin"
             android:layout_marginStart="@dimen/tiny_margin"
             android:text="@string/file_save" />
+        
+        //inputan judul
         <EditText
             android:backgroundTint="#d3d3d3"
             android:id="@+id/edit_title"
