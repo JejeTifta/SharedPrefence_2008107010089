@@ -1,7 +1,7 @@
 package com.example.alarmfile
 
 import android.content.Context
-
+//internal object untuk mengakses class fileHelper
 internal object FileHelper {
     fun writeToFile(fileModel: FileModel, context: Context) {
         context.openFileOutput(fileModel.filename, Context.MODE_PRIVATE).use {
